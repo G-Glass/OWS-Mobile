@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ows.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>OWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><span id="icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span><span class="span2"> OWS </span></h1>
+        <menu id="itens">
+            <ul>
+                <li>Serviços</li>
+                <li>Web</li>
+                <li>Empresa</li>
+            </ul>
+        </menu>
+    </header>
+   <main>
+    <h1>OWS</h1>
+    <section>
+        <form action="arquivos.js" method="post" class="man">
+            
+            <h2>Login</h2>
+            <p>Entre com sua conta existente.</p>
+            <div>
+                <label for="nome">Nome do Usuario:</label>
+                <input type="text" name="inome" id="nome" required placeholder="Digite o nome" class="input">
+            </div>
+            <div>
+                <label for="senha">Senha do Usuario:</label>
+                <input type="password" name="isenha" id="senha" placeholder="Digite a senha" class="input">
+                </div>
+            <div>
+                <input type="submit" value="Entar" class="subinput">
+            </div>
+            <p>Não tem conta na <span class="sp">OWS</span>? <a href="">Registe-se.</a></p>
+            
+        </form>
+    </section>
+   </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {itens.style.display = "block"}
+
+    
+        }
+    </script>
+</body>
+</html>
